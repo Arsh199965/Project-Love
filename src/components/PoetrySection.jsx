@@ -39,7 +39,7 @@ const PoetrySection = ({
         </div>
 
         {/* Image Section */}
-        <div className="absolute right-7 w-[40rem] h-auto">
+        <div className="absolute right-7 w-[40rem] h-[30rem]">
           <img
             src={image}
             alt="Poetry Section"
@@ -55,7 +55,7 @@ const PoetrySection = ({
       <div className="flex items-center h-[80vh] bg-white mb-8">
 
         {/* Image Section */}
-        <div className="absolute left-7 w-[40rem] h-auto">
+        <div className="absolute left-7 w-[40rem] h-[30rem]">
           <img
             src={image}
             alt="Poetry Section"
