@@ -15,20 +15,6 @@ import PoetryCarousel from "../components/PoetryCarousel";
 const HomePage = () => {
   const scrollRef = useRef(null);
 
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      inertia: 0.75,
-    });
-
-    scroll.update(); // Update LocomotiveScroll when DOM changes
-
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
-
   const RanjishHiSahi = [
     "Ranjish hi sahi, dil hi dukhaane ke liye aa.",
     "Aa phir se mujhe chhod ke jaane ke liye aa.",
@@ -211,11 +197,26 @@ const HomePage = () => {
 
   const poet_DilHiToHai = "Mirza Ghalib";
 
+  useEffect(() => {
+  const scroll = new LocomotiveScroll({
+    el: scrollRef.current,
+    smooth: true,
+    inertia: 0.75,
+  });
+
+  setTimeout(() => {
+    scroll.update(); // Force an update after everything is rendered
+  }, 1000);
+
+  return () => {
+    scroll.destroy();
+  };
+}, []);
   return (
     <div
       ref={scrollRef}
       data-scroll-container
-      className="min-h-screen bg-white overflow-hidden"
+      className="min-h-screen bg-white relative overflow-hidden"
     >
       {/* Header */}
       <header className="bg-peach pt-4 pb-6 px-8 mx-6 m-3 mb-16 flex justify-between items-center rounded-3xl shadow-md ">
