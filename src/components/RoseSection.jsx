@@ -15,7 +15,7 @@ const RoseSection = () => {
   return (
     <section
       ref={ref}
-      className="relative bg-gradient-to-r from-rose-300  via-red-300 to-peach bg-opacity-10 mx-6 rounded-3xl shadow-lg mt-8 text-gray-900 py-16 px-8"
+      className="relative bg-gradient-to-r from-rose-300  via-red-300 to-peach bg-opacity-10 mx-6 rounded-3xl shadow-lg mt-8 text-gray-900 py-10 px-8"
     >
       <div className="flex justify-between items-center relative">
         {/* Left Rose */}
@@ -40,7 +40,7 @@ const RoseSection = () => {
 
         {/* Right Rose */}
         <div
-          className={`absolute right-0 top-0 transform transition-transform translate-x-36 -translate-y-[0.72rem] duration-1000 ease-out ${
+          className={`absolute right-0 top-0 transform transition-transform translate-x-36 -translate-y-[2.2rem] duration-1000 ease-out ${
             inView ? 'translate-y-0 scale-100' : '-translate-y-[2.5rem] scale-75'
           }`}
         >
