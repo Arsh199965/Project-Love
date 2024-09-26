@@ -15,7 +15,7 @@ const RoseSection = () => {
   return (
     <section
       ref={ref}
-      className="relative bg-gradient-to-r from-rose-300  via-red-300 to-peach bg-opacity-10 mx-6 rounded-3xl shadow-lg mt-8 text-gray-900 py-10 px-8"
+      className="relative bg-gradient-to-r from-rose-300  via-red-300 to-peach bg-opacity-10 mx-6 rounded-3xl shadow-lg mt-8 text-gray-900 py-[4.7rem] px-8"
     >
       <div className="flex justify-between items-center relative">
         {/* Left Rose */}

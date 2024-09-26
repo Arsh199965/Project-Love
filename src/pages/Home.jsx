@@ -11,6 +11,7 @@ import poetrybg3 from "../assets/poetry-bg3.jpg";
 import EmotionsSection from "../components/EmotionsSection";
 import Footer from "../components/Footer";
 import PoetryCarousel from "../components/PoetryCarousel";
+import ExploreMorePoetry from "../components/Paper";
 
 const HomePage = () => {
   const scrollRef = useRef(null);
@@ -315,7 +316,7 @@ const HomePage = () => {
         direction="right"
       />
       <PoetryCarousel titles={titles} poetries={poetries} poets={poets} />
-
+      <ExploreMorePoetry/>
       <Footer />
     </div>
   );
